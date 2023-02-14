@@ -1,0 +1,13 @@
+@import 'common.css';
+
+
+
+header{
+    background-color: aqua;
+}
+.ms-container{
+    background-color: beige;
+}
+aside{
+    background-color: blueviolet;
+}
