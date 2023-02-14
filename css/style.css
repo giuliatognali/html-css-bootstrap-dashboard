@@ -2,17 +2,26 @@
 
 
 header{
-    height: auto;
+    height: 70px;
     background-color: aqua;
 }
 .ms-container{
-    
-    background-color: beige;
-/*     height: calc(100vh - ); */
+    height: calc(100vh - 70px);    
+    background-color: rgb(172, 45, 111);
 }
 header .ms-header-container > .row{
     background-color: brown;
 }
 aside{
     background-color: blueviolet;
+}
+
+.container{
+    background-color: rgb(111, 117, 105);
+}
+#next-lesson,
+#faq,
+#todo,
+#active-users{
+    height: 400px;
 }
