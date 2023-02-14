@@ -1,16 +1,24 @@
 @import 'common.css';
-
+@import 'components/ms-search-form.css';
 
 header{
-    height: 70px;
-    background-color: aqua;
+/*     height: 70px; */
+    background-color:#f8f9fa;
+}
+
+.logo{
+    width: 35px;
+    height: 35px;
+}
+.logo > img {
+    height: 100%;
 }
 .ms-container{
     height: calc(100vh - 70px);    
     background-color: rgb(172, 45, 111);
 }
 header .ms-header-container > .row{
-    background-color: brown;
+    background-color:white;
 }
 aside{
     background-color: blueviolet;

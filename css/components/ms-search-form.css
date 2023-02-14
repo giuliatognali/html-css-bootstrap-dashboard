@@ -1,0 +1,11 @@
+/*
+ ms-search-form
+  */
+
+  .ms-search-form{
+    background-color: #e5e5e5;
+  }
+  .ms-search-form:focus{
+    box-shadow: none;
+    border-color: inherit;
+  }
