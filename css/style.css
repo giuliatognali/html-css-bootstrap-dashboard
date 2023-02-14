@@ -1,12 +1,17 @@
 @import 'common.css';
 
 
-
 header{
+    height: auto;
     background-color: aqua;
 }
 .ms-container{
+    
     background-color: beige;
+/*     height: calc(100vh - ); */
+}
+header .ms-header-container > .row{
+    background-color: brown;
 }
 aside{
     background-color: blueviolet;
