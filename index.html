@@ -19,23 +19,24 @@
 <body>
     <!-- header -->
     <header>
-        <div class="ms-header-container py-2">
+        <div class="ms-header-container py-3">
             <div class="row mx-auto">
                 <div class="col-sm-1 col-lg-2">
                     <div class="logo d-flex align-items-center">
                         <img class="d-lg-none" src="img/mobile-logo.png" alt="mobile-logo">
-                        <img class="d-sm-none d-lg-block" src="img/logo.svg" alt="logo">
+                        <img class="d-none d-lg-block" src="img/logo.svg" alt="logo">
                     </div>
                 </div>
                 <div class="col-sm-10 col-lg-8">
                     <label for="site-search" class="form-label visually-hidden">Search</label>
-                    <input type="search" class="form-control ms-search-form" id="site-search" name="search" placeholder="Prova a cercare: Lezioni di Laravel">
+                    <input type="search" class="form-control ms-search-form" id="site-search" name="search"
+                        placeholder="Prova a cercare: Lezioni di Laravel">
                 </div>
                 <div class="col-sm-1 col-lg-2 my-auto text-end">
                     <ul class="d-flex justify-content-between">
-                        <li class="d-sm-none d-lg-block"><i class="fa-solid fa-list"></i></li>
-                        <li class="d-sm-none d-lg-block"><i class="fa-solid fa-circle-question"></i></li>
-                        <li class="d-sm-none d-lg-block"><i class="fa-solid fa-ellipsis-vertical"></i></li>
+                        <li class="d-none d-lg-block"><i class="fa-solid fa-list"></i></li>
+                        <li class="d-none d-lg-block"><i class="fa-solid fa-circle-question"></i></li>
+                        <li class="d-none d-lg-block"><i class="fa-solid fa-ellipsis-vertical"></i></li>
                         <li><a href="#"><i class="fa-solid fa-bell"></i></a></li>
                     </ul>
                 </div>
@@ -59,15 +60,25 @@
         </aside>
         <!-- /aside nav -->
         <!-- main container -->
-        <div class="container mx-n4 flex-grow-1 overflow-y-auto">
-            <div class="row">
-                <div class="col-sm-12 col-lg-8">
-                    <div id="next-lesson" class="col">Prossime lezioni</div>
-                    <div id="faq" class="col">F.A.Q.</div>
+        <div class="ms-main-container w-100">
+            <div class="ms-main-top-container">
+                <div class="row border">
+                    <div class="col-4">Boolean</div>
+                    <div class="col-4">Studenti online</div>
+                    <div class="col-4">Nuovo studente</div>
                 </div>
-                <div class="col-sm-12 col-lg-4">
-                    <div id="todo" class="col">Todo</div>
-                    <div id="active-users" class="col">Grafico</div>
+            </div>
+
+            <div class="ms-main-bottom-container mx-3 flex-grow-1 overflow-y-auto">
+                <div class="row">
+                    <div class="col-sm-12 col-lg-8">
+                        <div id="next-lesson" class="col border my-3">Prossime lezioni</div>
+                        <div id="faq" class="col border my-3">F.A.Q.</div>
+                    </div>
+                    <div class="col-sm-12 col-lg-4">
+                        <div id="todo" class="col border my-3">Todo</div>
+                        <div id="active-users" class="col border my-3">Grafico</div>
+                    </div>
                 </div>
             </div>
         </div>
