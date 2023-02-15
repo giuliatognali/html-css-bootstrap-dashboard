@@ -29,9 +29,7 @@ aside{
     background-image: url(../img/sidebar-bg.png);
 }
 
-#next-lesson,
-#faq,
-#todo,
+
 #active-users{
     height: 400px;
 }
@@ -59,3 +57,31 @@ aside a{
     color:currentColor;
 /*     border:1px solid black;
  */}
+.btn-table{
+    color:#6c757d;
+    border: 1px solid #6c757d;  
+}
+.btn-table:hover{
+    color: currentColor;
+    border: 1px solid #6c757d;
+    box-shadow: none;
+}
+
+.class > img{
+    height: 30px;
+    padding-right: 10px;
+
+}
+tbody .btn{
+    border-radius: 10px;
+}
+.btn-warning{
+    color:white;
+}
+.btn-warning:hover,
+.btn-warning:focus{
+    color:white;
+}
+.ms-card-list{
+    margin: 20px;
+}
