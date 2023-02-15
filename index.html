@@ -67,22 +67,25 @@
     <main class="ms-container d-flex">
         <!-- aside nav -->
         <aside class="d-flex flex-column w-auto overflow-hidden">
-<!--             <ul class="text-start mx-auto mt-5 pt-3">
+            <!--             <ul class="text-start mx-auto mt-5 pt-3">
                 <li class="mb-3"><a href="#" class="p-1 border"><i class="fa-solid fa-house px-1"></i><span>Home</span></a></li>
                 <li class="mb-3"><a href="#" class="p-1 border"><i class="fa-solid fa-chart-simple px-1"></i><span>Stats</span></a></li>
                 <li class="mb-3"><a href="#" class="p-1 border"><i class="fa-solid fa-signal px-1"></i><span>Signals</span></a></li>
             </ul> -->
-            <div class="btn-group-vertical mt-5 px-2" role="group" aria-label="Vertical button group">
-                <button type="button" class="btn btn-aside text-start"><i class="fa-solid fa-house px-1"></i><span>Home</span></button>
-                <button type="button" class="btn btn-aside text-start"><i class="fa-solid fa-chart-simple p-1"></i><span>Stats</span></button>
-                <button type="button" class="btn btn-aside text-start"><i class="fa-solid fa-signal px-1"></i><span>Signals</span></button>
-                </div>
-            <!--  <div class="bottom-nav mt-auto mx-auto">
-                admin
-            </div> -->
-            <ul class="mt-auto text-center mx-auto">
-                <button type="button" class="btn btn-aside text-start"><i class="fa-solid fa-signal px-1"></i><span>Admin</span></button>
+            <div class="btn-group-vertical mt-5 mx-3 d-flex flex-column justify-content-start" role="group"
+                aria-label="Vertical button group">
+                <button type="button" class="btn btn-aside d-flex justify-content-start align-items-center">
+                    <i class="fa-solid fa-house"></i><span class="pe-3 d-none d-lg-block">Home</span></button>
+                <button type="button" class="btn btn-aside d-flex justify-content-start align-items-center">
+                    <i class="fa-solid fa-chart-simple"></i><span class="pe-3 d-none d-lg-block">Stats</span></button>
+                <button type="button" class="btn btn-aside d-flex justify-content-start align-items-center">
+                    <i class="fa-solid fa-signal"></i><span class="d-none d-lg-block pe-4">Signals</span></button>
+            </div>
 
+            <div class="mt-auto text-center mb-3 mx-auto">
+                <button type="button" class="btn btn-aside d-flex justify-content-start align-items-center">
+                    <i class="fa-solid fa-gear"></i><span class="d-none d-lg-block pe-4">Admin</span></button>
+            </div>
         </aside>
         <!-- /aside nav -->
         <!-- main container -->
@@ -110,7 +113,7 @@
         </div>
         <!-- /main container -->
     </main>
-<!-- /main -->
+    <!-- /main -->
 
 
 
