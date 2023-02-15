@@ -1,6 +1,8 @@
 @import 'common.css';
 @import 'components/ms-search-form.css';
-
+body{
+    font-family: 'Roboto', sans-serif;
+}
 header{
     height: 70px;
     background-color:#f8f9fa;
@@ -14,7 +16,6 @@ header{
 }
 .ms-container{
     height: calc(100vh - 70px);    
-    background-color: rgb(172, 45, 111);
 }
 
 .top-main{
