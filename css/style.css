@@ -19,7 +19,19 @@ header{
 
 .top-main{
     background-color: #1b72e8;
+    color: white;
 }
+.btn-plus i{
+    color: white;
+}
+
+.badge{
+    background-color:#165bba;
+    border-radius: 15px;
+    font-weight: 100;
+}
+
+
 header .ms-header-container > .row{
     background-color:white;
 }
