@@ -21,17 +21,23 @@
     <header>
         <div class="ms-header-container py-3">
             <div class="row mx-auto">
+                <!-- logo -->
                 <div class="col-auto">
                     <div class="logo d-flex align-items-center">
                         <img class="d-lg-none" src="img/mobile-logo.png" alt="mobile-logo">
                         <img class="d-none d-lg-block py-2" src="img/logo.svg" alt="logo">
                     </div>
                 </div>
+                <!-- search bar -->
                 <div class="col">
-                    <label for="site-search" class="form-label visually-hidden">Search</label>
-                    <input type="search" class="form-control ms-search-form" id="site-search" name="search"
-                        placeholder="Prova a cercare: Lezioni di Laravel">
+                    <label for="site-search" class="form-label visually-hidden">Username</label>
+                    <div class="input-group">
+                        <div class="input-group-text group-icon"><i class="fa-solid fa-magnifying-glass"></i></div>
+                        <input type="search" class="form-control ms-search-form" id="site-search"
+                            placeholder="Prova a cercare: Lezioni di Laravel">
+                    </div>
                 </div>
+                <!-- icons right and dropdown -->
                 <div class="col-auto my-auto">
                     <ul class="d-flex align-items-center justify-content-sm-center justify-content-lg-between">
                         <li class="d-none d-lg-block px-2"><i class="fa-solid fa-list"></i></li>
@@ -39,38 +45,44 @@
                         <li class="d-none d-lg-block px-2"><i class="fa-solid fa-ellipsis-vertical"></i></li>
                         <li class="px-2">
                             <div class="dropdown">
-                                <button class="btn btn-bell" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <button class="btn btn-bell" type="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
                                     <i class="fa-solid fa-bell"></i>
                                 </button>
                                 <ul class="dropdown-menu">
-                                  <li><a class="dropdown-item" href="#">Profilo</a></li>
-                                  <li><a class="dropdown-item" href="#">Fatturazione</a></li>
-                                  <li><a class="dropdown-item" href="#">Logout</a></li>
+                                    <li><a class="dropdown-item" href="#">Profilo</a></li>
+                                    <li><a class="dropdown-item" href="#">Fatturazione</a></li>
+                                    <li><a class="dropdown-item" href="#">Logout</a></li>
                                 </ul>
-                              </div>
-                            </li>
+                            </div>
+                        </li>
                     </ul>
                 </div>
+                <!-- /icons right and dropdown -->
             </div>
         </div>
-
-
     </header>
     <!-- /header -->
+    <!-- main -->
     <main class="ms-container d-flex">
         <!-- aside nav -->
         <aside class="d-flex flex-column w-auto overflow-hidden">
-            <ul class="text-center mx-auto">
-                <li><button type="button" class="btn btn-dark">Home</button></li>
-                <li>stats</li>
-                <li>boh</li>
-            </ul>
-           <!--  <div class="bottom-nav mt-auto mx-auto">
+<!--             <ul class="text-start mx-auto mt-5 pt-3">
+                <li class="mb-3"><a href="#" class="p-1 border"><i class="fa-solid fa-house px-1"></i><span>Home</span></a></li>
+                <li class="mb-3"><a href="#" class="p-1 border"><i class="fa-solid fa-chart-simple px-1"></i><span>Stats</span></a></li>
+                <li class="mb-3"><a href="#" class="p-1 border"><i class="fa-solid fa-signal px-1"></i><span>Signals</span></a></li>
+            </ul> -->
+            <div class="btn-group-vertical mt-5 px-2" role="group" aria-label="Vertical button group">
+                <button type="button" class="btn btn-aside text-start"><i class="fa-solid fa-house px-1"></i><span>Home</span></button>
+                <button type="button" class="btn btn-aside text-start"><i class="fa-solid fa-chart-simple p-1"></i><span>Stats</span></button>
+                <button type="button" class="btn btn-aside text-start"><i class="fa-solid fa-signal px-1"></i><span>Signals</span></button>
+                </div>
+            <!--  <div class="bottom-nav mt-auto mx-auto">
                 admin
             </div> -->
             <ul class="mt-auto text-center mx-auto">
-                <li><button type="button" class="btn btn-dark">Admin</button></li>
-    
+                <button type="button" class="btn btn-aside text-start"><i class="fa-solid fa-signal px-1"></i><span>Admin</span></button>
+
         </aside>
         <!-- /aside nav -->
         <!-- main container -->
@@ -98,7 +110,7 @@
         </div>
         <!-- /main container -->
     </main>
-
+<!-- /main -->
 
 
 

@@ -4,8 +4,13 @@
 
   .ms-search-form{
     background-color: #e5e5e5;
+    border-left: none;
   }
   .ms-search-form:focus{
     box-shadow: none;
-    border-color: inherit;
+    border:none ;
+  }
+  .group-icon{
+    background-color:  #e5e5e5;
+    border-right: none;
   }

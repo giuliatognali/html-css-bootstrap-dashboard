@@ -7,7 +7,6 @@ header{
 }
 
 .logo{
-
     height: 38px;
 }
 .logo > img {
@@ -43,4 +42,22 @@ aside{
     box-shadow: none;
     border-color: none;
     color:  #ff8f00;
+}
+.btn-aside{
+    background-color: transparent;
+}
+.btn-aside:hover{
+    background-color: rgba(255, 255, 255, 0.3);
+    border: none;
+    box-shadow: none;
+}
+aside a{
+    text-decoration: none;
+    color:currentColor;
+/*     border:1px solid black;
+ */}
+
+aside a:hover{
+    color: currentColor;
+    background-color: rgba(255, 255, 255, 0.2);
 }

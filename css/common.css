@@ -5,3 +5,6 @@ ul{
 li{
     list-style-type: none;
 }
+aside i{
+    padding-right: 10px;
+}
