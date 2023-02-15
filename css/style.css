@@ -2,7 +2,7 @@
 @import 'components/ms-search-form.css';
 
 header{
-/*     height: 70px; */
+    height: 70px;
     background-color:#f8f9fa;
 }
 
@@ -21,12 +21,10 @@ header .ms-header-container > .row{
     background-color:white;
 }
 aside{
-    background-color: blueviolet;
+    background-color:#10273d;
+    color:white;
 }
 
-.container{
-    background-color: rgb(111, 117, 105);
-}
 #next-lesson,
 #faq,
 #todo,
