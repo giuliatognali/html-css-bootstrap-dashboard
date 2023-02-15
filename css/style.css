@@ -24,8 +24,9 @@ header .ms-header-container > .row{
     background-color:white;
 }
 aside{
-    background-color:#aebdce;
+    background-color:#051e34;
     color:white;
+    background-image: url(../img/sidebar-bg.png);
 }
 
 #next-lesson,
