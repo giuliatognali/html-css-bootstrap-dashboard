@@ -7,8 +7,8 @@ header{
 }
 
 .logo{
-    width: 35px;
-    height: 35px;
+
+    height: 38px;
 }
 .logo > img {
     height: 100%;
@@ -17,11 +17,15 @@ header{
     height: calc(100vh - 70px);    
     background-color: rgb(172, 45, 111);
 }
+
+.top-main{
+    background-color: #1b72e8;
+}
 header .ms-header-container > .row{
     background-color:white;
 }
 aside{
-    background-color:#10273d;
+    background-color:#aebdce;
     color:white;
 }
 
@@ -30,4 +34,13 @@ aside{
 #todo,
 #active-users{
     height: 400px;
+}
+
+.btn-bell{
+    color: #ff8f00;
+}
+.btn-bell:focus{
+    box-shadow: none;
+    border-color: none;
+    color:  #ff8f00;
 }

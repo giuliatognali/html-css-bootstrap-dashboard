@@ -21,23 +21,34 @@
     <header>
         <div class="ms-header-container py-3">
             <div class="row mx-auto">
-                <div class="col-sm-1 col-lg-2">
+                <div class="col-auto">
                     <div class="logo d-flex align-items-center">
                         <img class="d-lg-none" src="img/mobile-logo.png" alt="mobile-logo">
-                        <img class="d-none d-lg-block" src="img/logo.svg" alt="logo">
+                        <img class="d-none d-lg-block py-2" src="img/logo.svg" alt="logo">
                     </div>
                 </div>
-                <div class="col-sm-10 col-lg-8">
+                <div class="col">
                     <label for="site-search" class="form-label visually-hidden">Search</label>
                     <input type="search" class="form-control ms-search-form" id="site-search" name="search"
                         placeholder="Prova a cercare: Lezioni di Laravel">
                 </div>
-                <div class="col-sm-1 col-lg-2 my-auto">
-                    <ul class="d-flex justify-content-sm-center justify-content-lg-between">
-                        <li class="d-none d-lg-block"><i class="fa-solid fa-list"></i></li>
-                        <li class="d-none d-lg-block"><i class="fa-solid fa-circle-question"></i></li>
-                        <li class="d-none d-lg-block"><i class="fa-solid fa-ellipsis-vertical"></i></li>
-                        <li><a href="#"><i class="fa-solid fa-bell"></i></a></li>
+                <div class="col-auto my-auto">
+                    <ul class="d-flex align-items-center justify-content-sm-center justify-content-lg-between">
+                        <li class="d-none d-lg-block px-2"><i class="fa-solid fa-list"></i></li>
+                        <li class="d-none d-lg-block px-2"><i class="fa-solid fa-circle-question"></i></li>
+                        <li class="d-none d-lg-block px-2"><i class="fa-solid fa-ellipsis-vertical"></i></li>
+                        <li class="px-2">
+                            <div class="dropdown">
+                                <button class="btn btn-bell" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <i class="fa-solid fa-bell"></i>
+                                </button>
+                                <ul class="dropdown-menu">
+                                  <li><a class="dropdown-item" href="#">Profilo</a></li>
+                                  <li><a class="dropdown-item" href="#">Fatturazione</a></li>
+                                  <li><a class="dropdown-item" href="#">Logout</a></li>
+                                </ul>
+                              </div>
+                            </li>
                     </ul>
                 </div>
             </div>
@@ -49,19 +60,22 @@
     <main class="ms-container d-flex">
         <!-- aside nav -->
         <aside class="d-flex flex-column w-auto overflow-hidden">
-            <ul class="px-2 text-center">
+            <ul class="text-center mx-auto">
                 <li><button type="button" class="btn btn-dark">Home</button></li>
                 <li>stats</li>
                 <li>boh</li>
             </ul>
-            <div class="bottom-nav mt-auto mx-auto">
+           <!--  <div class="bottom-nav mt-auto mx-auto">
                 admin
-            </div>
+            </div> -->
+            <ul class="mt-auto text-center mx-auto">
+                <li><button type="button" class="btn btn-dark">Admin</button></li>
+    
         </aside>
         <!-- /aside nav -->
         <!-- main container -->
         <div class="ms-main-container w-100 overflow-auto">
-            <div class="ms-main-top-container">
+            <div class="top-main container-fluid">
                 <div class="row border">
                     <div class="col-4">Boolean</div>
                     <div class="col-4">Studenti online</div>
@@ -69,7 +83,7 @@
                 </div>
             </div>
 
-            <div class="ms-main-bottom-container mx-3 flex-grow-1">
+            <div class="bottom-main container-fluid">
                 <div class="row">
                     <div class="col-sm-12 col-lg-8">
                         <div id="next-lesson" class="col border my-3">Prossime lezioni</div>
