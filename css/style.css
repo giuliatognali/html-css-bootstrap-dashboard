@@ -30,10 +30,6 @@ aside{
 }
 
 
-#active-users{
-    height: 400px;
-}
-
 .btn-bell{
     color: #ff8f00;
 }
@@ -55,8 +51,7 @@ aside{
 aside a{
     text-decoration: none;
     color:currentColor;
-/*     border:1px solid black;
- */}
+}
 .btn-table{
     color:#6c757d;
     border: 1px solid #6c757d;  
