@@ -5,23 +5,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <!-- font awsome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
         integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- google font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <!-- cdn bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
-
     <title>Bootstrap Dashboard</title>
 </head>
-
 <body>
     <!-- header -->
     <header>
@@ -99,10 +96,13 @@
             <!-- top-main -->
             <div class="top-main container-fluid">
                 <div class="row align-items-start pt-4 ps-2 pe-4">
-                     <!-- new student -->
-                    <div class="d-flex align-items-center mb-3 justify-content-sm-start justify-content-md-end col-sm-12 col-md-4 col-lg-3 order-md-3">
+                    <!-- new student -->
+                    <div
+                        class="d-flex align-items-center mb-3 justify-content-sm-start justify-content-md-end col-sm-12 col-md-4 col-lg-3 order-md-3">
                         <div class="pe-4">Nuovo Studente</div>
-                        <button type="button" class="btn btn-plus border"><i class="fa-solid fa-plus"></i></i></button>
+                        <button type="button" class="btn btn-plus border" data-bs-toggle="offcanvas"
+                            data-bs-target="#offcanvasnewstudent" aria-controls="offcanvasnewstudent"><i
+                                class="fa-solid fa-plus"></i></button>
                     </div>
                     <!-- /new student -->
                     <!-- sez bedge -->
@@ -113,11 +113,12 @@
                         </div>
                         <div class="top-main-bedges d-flex align-items-end">
                             <h5><span class="badge">3 app</span>
-                            </span><i class="fa-solid fa-angles-right"></i>
+                                </span><i class="fa-solid fa-angles-right"></i>
                                 <span class="badge d-lg-none">+</span>
                                 <span class="badge d-none d-lg-inline">Boolean monile app</span>
                                 <span class="badge d-none d-lg-inline">Boolean web app</span>
-                                <span class="badge d-none d-lg-inline">Boolean blog app</span></h5>
+                                <span class="badge d-none d-lg-inline">Boolean blog app</span>
+                            </h5>
                         </div>
                     </div>
                     <!-- /sez bedge -->
@@ -310,7 +311,7 @@
                         <!-- /next lessons -->
                         <!-- card faq -->
                         <div id="faq" class="col my-3">
-                            
+
                             <div class="card" class="w-100">
                                 <div class="card-header">
                                     <h2>F.A.Q.</h2>
@@ -435,11 +436,87 @@
     </main>
     <!-- /main -->
 
+<!-- offcanvas -->
+<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasnewstudent" aria-labelledby="offcanvasnewstudentLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="offcanvasnewstudentLabel">Inserisci un nuovo studente</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <form action="" method="get">
+        <div class="row">
+          <!-- name -->
+          <div class="col-sm-12 col-md-6 mb-3">
+            <label for="name" class="form-label">Nome</label>
+            <input type="text" class="form-control" id="name" required>
+          </div>
+          <!-- surname -->
+          <div class="col-sm-12 col-md-6 mb-3">
+            <label for="surname" class="form-label">Cognome</label>
+            <input type="text" class="form-control" id="surname" required>
+          </div>
+          <!-- email -->
+          <div class="col-sm-12 col-md-6 mb-3">
+            <label for="email" class="form-label">Email address</label>
+            <div class="input-group">
+              <span class="input-group-text" id="basic-addon1">@</span>
+              <input type="text" class="form-control" id="email" aria-label="Username" aria-describedby="basic-addon1" required>
+            </div>
+          </div>
+          <!-- psw -->
+          <div class="col-sm-12 col-md-6 mb-3">
+            <label for="pwd" class="form-label">Password</label>
+            <input type="password" class="form-control" id="pwd" required>
+          </div>
+          <!-- address -->
+          <div class="col-12 mb-3">
+            <label for="address" class="form-label">Indirizzo</label>
+            <input type="text" class="form-control" id="address">
+          </div>
+          <!-- city -->
+          <div class="col-sm-12 col-md-6 mb-3">
+            <label for="city" class="form-label">Città</label>
+            <input type="text" class="form-control" id="city">
+          </div>
+          <!-- country area -->
+          <div class="col-sm-12 col-md-3 mb-3">
+            <label for="city" class="form-label">Stato</label>
+            <select class="form-select">
+              <option selected>Scegli...</option>
+              <option value="1">Australia</option>
+              <option value="2">Canada</option>
+              <option value="3">China</option>
+              <option value="4">Europe</option>
+              <option value="5">U.S.A</option>
+            </select>
+          </div>
+          <!-- cap -->
+          <div class="col-sm-12 col-md-3 mb-3">
+            <label for="cap" class="form-label">CAP</label>
+            <input type="text" class="form-control" id="cap">
+          </div>
+          <!-- add file -->
+          <div class="col-sm-12 mb-3">
+            <label for="formFile" class="form-label visually-hidden">Select file</label>
+            <input class="form-control" type="file" id="formFile">
+          </div>
+          <!-- check to continue -->
+          <div class="col-sm-12 mb-3">
+            <input type="checkbox" class="form-check-input" id="checktocontinue">
+            <label class="form-check-label" for="checktocontinue">Seleziona per proseguire</label>
+          </div>
+          <!-- submit reset btn -->
+          <div class="col-sm-12 mb-3">
+            <button class="btn btn-primary" type="submit">Salva</button>
+            <button class="btn btn-warning" type="reset">Reset</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+<!-- /offcanvas -->
 
-
-
-
-
+<!-- cdn js -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>

@@ -8,11 +8,11 @@ li{
 aside i{
     padding-right: 10px;
 }
-.btn:active{
+.btn :active{
     border:currentColor;
     box-shadow: none;
 }
-.btn:focus{
+.btn :focus{
     border-color:currentColor;
     box-shadow: none;
 }

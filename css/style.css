@@ -1,10 +1,17 @@
 @import 'common.css';
 @import 'components/ms-search-form.css';
+
 body{
     font-family: 'Roboto', sans-serif;
 }
+.ms-container{
+    height: calc(100vh - 70px);    
+}
+
+/***************
+ HEADER 
+ ***************/
 header{
-    height: 70px;
     background-color:#f8f9fa;
 }
 
@@ -14,13 +21,30 @@ header{
 .logo > img {
     height: 100%;
 }
-.ms-container{
-    height: calc(100vh - 70px);    
+
+header .ms-header-container > .row{
+    background-color:white;
 }
+
+.btn-bell{
+    color: #ff8f00;
+}
+.btn-bell:focus{
+    box-shadow: none;
+    border-color: none;
+    color:  #ff8f00;   
+}
+
+/***************
+ TOP-MAIN
+ ***************/
 
 .top-main{
     background-color: #1b72e8;
     color: white;
+}
+.btn-plus{
+    background-color:#1b72e8;
 }
 .btn-plus i{
     color: white;
@@ -32,24 +56,13 @@ header{
     font-weight: 100;
 }
 
-
-header .ms-header-container > .row{
-    background-color:white;
-}
+/***************
+ ASIDE 
+ ***************/
 aside{
     background-color:#051e34;
     color:white;
     background-image: url(../img/sidebar-bg.png);
-}
-
-
-.btn-bell{
-    color: #ff8f00;
-}
-.btn-bell:focus{
-    box-shadow: none;
-    border-color: none;
-    color:  #ff8f00;   
 }
 
 .btn-aside{
@@ -66,6 +79,10 @@ aside a{
     text-decoration: none;
     color:currentColor;
 }
+
+/***************
+ TABLE 
+ ***************/
 .btn-table{
     color:#6c757d;
     border: 1px solid #6c757d;  
@@ -84,7 +101,7 @@ aside a{
 tbody .btn{
     border-radius: 10px;
 }
-.btn-warning{
+tbody .btn-warning{
     color:white;
 }
 .btn-warning:hover,
@@ -94,3 +111,14 @@ tbody .btn{
 .ms-card-list{
     margin: 20px;
 }
+
+/***************
+ MEDIA Q 
+ ***************/
+ #offcanvasnewstudent{
+    width:100%;
+ }
+ @media (min-width:1200px){
+    #offcanvasnewstudent{
+        width: 50rem;}
+ }
