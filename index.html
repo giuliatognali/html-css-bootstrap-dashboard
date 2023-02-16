@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="css/style.css">
     <title>Bootstrap Dashboard</title>
 </head>
+
 <body>
     <!-- header -->
     <header>
@@ -113,7 +114,7 @@
                         </div>
                         <div class="top-main-bedges d-flex align-items-end">
                             <h5><span class="badge">3 app</span>
-                                </span><i class="fa-solid fa-angles-right"></i>
+                                <i class="fa-solid fa-angles-right"></i>
                                 <span class="badge d-lg-none">+</span>
                                 <span class="badge d-none d-lg-inline">Boolean monile app</span>
                                 <span class="badge d-none d-lg-inline">Boolean web app</span>
@@ -137,7 +138,7 @@
                     <div class="col-sm-12 col-lg-8">
                         <!-- next lessons -->
                         <div id="next-lesson" class="col my-3">
-                            <div class="card" class="w-100">
+                            <div class="card w-100">
                                 <div class="card-header">
                                     <h2>Prossime lezioni</h2>
                                 </div>
@@ -168,9 +169,10 @@
                                                 </td>
                                                 <td>
                                                     <button type="button" class="btn btn-table"><i
-                                                            class="fa-solid fa-pencil"></i></button>
+                                                                class="fa-solid fa-pencil"></i></button>
                                                     <button type="button" class="btn btn-table"><i
-                                                            class="fa-solid fa-trash"></i></button>
+                                                                class="fa-solid fa-trash"></i></button>
+
                                                 </td>
                                             </tr>
                                             <tr>
@@ -312,7 +314,7 @@
                         <!-- card faq -->
                         <div id="faq" class="col my-3">
 
-                            <div class="card" class="w-100">
+                            <div class="card w-100">
                                 <div class="card-header">
                                     <h2>F.A.Q.</h2>
                                 </div>
@@ -370,7 +372,7 @@
                     <div class="col-sm-12 col-lg-4">
                         <!-- todo list -->
                         <div id="todo" class="col my-3">
-                            <div class="card" class="w-100">
+                            <div class="card w-100">
                                 <div class="card-header">
                                     <h2>Todo</h2>
                                 </div>
@@ -378,26 +380,29 @@
                                     <ul class="list-group list-group-flush">
                                         <li class="list-group-item">
                                             <div class="form-check">
-                                                <input class="form-check-input" type="checkbox" value=""
-                                                    id="flexCheckChecked">
-                                                <label class="form-check-label" for="flexCheckChecked">
+                                                <label class="form-check-label" for="first-flexCheckChecked">
                                                     Kickoff nuove classi</label>
+                                                <input class="form-check-input" type="checkbox"
+                                                    id="first--flexCheckChecked">
+                                                
                                             </div>
                                         </li>
                                         <li class="list-group-item">
                                             <div class="form-check">
-                                                <input class="form-check-input" type="checkbox" value=""
-                                                    id="flexCheckChecked">
-                                                <label class="form-check-label" for="flexCheckChecked">
+                                                <label class="form-check-label" for="second-flexCheckChecked">
                                                     Lezioni su Boostrap 5 in classe#89</label>
+                                                <input class="form-check-input" type="checkbox"
+                                                    id="second-flexCheckChecked">
+                                                
                                             </div>
                                         </li>
                                         <li class="list-group-item">
                                             <div class="form-check">
-                                                <input class="form-check-input" type="checkbox" value=""
-                                                    id="flexCheckChecked">
-                                                <label class="form-check-label" for="flexCheckChecked">
+                                                <label class="form-check-label" for="third-flexCheckChecked">
                                                     Controllare username github studenti</label>
+                                                <input class="form-check-input" type="checkbox"
+                                                    id="third-flexCheckChecked">
+                                                
                                             </div>
                                         </li>
                                     </ul>
@@ -407,7 +412,7 @@
                         <!-- /todolist -->
                         <div id="active-users" class="col my-3">
                             <!-- stats -->
-                            <div class="card" class="w-100">
+                            <div class="card w-100">
                                 <div class="card ms-card-list">
                                     <img src="img/stats.jpeg" alt="graph">
                                     <div class="card-body">
@@ -436,87 +441,89 @@
     </main>
     <!-- /main -->
 
-<!-- offcanvas -->
-<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasnewstudent" aria-labelledby="offcanvasnewstudentLabel">
-    <div class="offcanvas-header">
-      <h5 class="offcanvas-title" id="offcanvasnewstudentLabel">Inserisci un nuovo studente</h5>
-      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-    </div>
-    <div class="offcanvas-body">
-      <form action="" method="get">
-        <div class="row">
-          <!-- name -->
-          <div class="col-sm-12 col-md-6 mb-3">
-            <label for="name" class="form-label">Nome</label>
-            <input type="text" class="form-control" id="name" required>
-          </div>
-          <!-- surname -->
-          <div class="col-sm-12 col-md-6 mb-3">
-            <label for="surname" class="form-label">Cognome</label>
-            <input type="text" class="form-control" id="surname" required>
-          </div>
-          <!-- email -->
-          <div class="col-sm-12 col-md-6 mb-3">
-            <label for="email" class="form-label">Email address</label>
-            <div class="input-group">
-              <span class="input-group-text" id="basic-addon1">@</span>
-              <input type="text" class="form-control" id="email" aria-label="Username" aria-describedby="basic-addon1" required>
-            </div>
-          </div>
-          <!-- psw -->
-          <div class="col-sm-12 col-md-6 mb-3">
-            <label for="pwd" class="form-label">Password</label>
-            <input type="password" class="form-control" id="pwd" required>
-          </div>
-          <!-- address -->
-          <div class="col-12 mb-3">
-            <label for="address" class="form-label">Indirizzo</label>
-            <input type="text" class="form-control" id="address">
-          </div>
-          <!-- city -->
-          <div class="col-sm-12 col-md-6 mb-3">
-            <label for="city" class="form-label">Città</label>
-            <input type="text" class="form-control" id="city">
-          </div>
-          <!-- country area -->
-          <div class="col-sm-12 col-md-3 mb-3">
-            <label for="city" class="form-label">Stato</label>
-            <select class="form-select">
-              <option selected>Scegli...</option>
-              <option value="1">Australia</option>
-              <option value="2">Canada</option>
-              <option value="3">China</option>
-              <option value="4">Europe</option>
-              <option value="5">U.S.A</option>
-            </select>
-          </div>
-          <!-- cap -->
-          <div class="col-sm-12 col-md-3 mb-3">
-            <label for="cap" class="form-label">CAP</label>
-            <input type="text" class="form-control" id="cap">
-          </div>
-          <!-- add file -->
-          <div class="col-sm-12 mb-3">
-            <label for="formFile" class="form-label visually-hidden">Select file</label>
-            <input class="form-control" type="file" id="formFile">
-          </div>
-          <!-- check to continue -->
-          <div class="col-sm-12 mb-3">
-            <input type="checkbox" class="form-check-input" id="checktocontinue">
-            <label class="form-check-label" for="checktocontinue">Seleziona per proseguire</label>
-          </div>
-          <!-- submit reset btn -->
-          <div class="col-sm-12 mb-3">
-            <button class="btn btn-primary" type="submit">Salva</button>
-            <button class="btn btn-warning" type="reset">Reset</button>
-          </div>
+    <!-- offcanvas -->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasnewstudent"
+        aria-labelledby="offcanvasnewstudentLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasnewstudentLabel">Inserisci un nuovo studente</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
-      </form>
+        <div class="offcanvas-body">
+            <form method="get">
+                <div class="row">
+                    <!-- name -->
+                    <div class="col-sm-12 col-md-6 mb-3">
+                        <label for="name" class="form-label">Nome</label>
+                        <input type="text" class="form-control" id="name" required>
+                    </div>
+                    <!-- surname -->
+                    <div class="col-sm-12 col-md-6 mb-3">
+                        <label for="surname" class="form-label">Cognome</label>
+                        <input type="text" class="form-control" id="surname" required>
+                    </div>
+                    <!-- email -->
+                    <div class="col-sm-12 col-md-6 mb-3">
+                        <label for="email" class="form-label">Email address</label>
+                        <div class="input-group">
+                            <span class="input-group-text" id="basic-addon1">@</span>
+                            <input type="text" class="form-control" id="email" aria-label="Username"
+                                aria-describedby="basic-addon1" required>
+                        </div>
+                    </div>
+                    <!-- psw -->
+                    <div class="col-sm-12 col-md-6 mb-3">
+                        <label for="pwd" class="form-label">Password</label>
+                        <input type="password" class="form-control" id="pwd" required>
+                    </div>
+                    <!-- address -->
+                    <div class="col-12 mb-3">
+                        <label for="address" class="form-label">Indirizzo</label>
+                        <input type="text" class="form-control" id="address">
+                    </div>
+                    <!-- city -->
+                    <div class="col-sm-12 col-md-6 mb-3">
+                        <label for="city" class="form-label">Città</label>
+                        <input type="text" class="form-control" id="city">
+                    </div>
+                    <!-- country area -->
+                    <div class="col-sm-12 col-md-3 mb-3">
+                        <label for="city" class="form-label">Stato</label>
+                        <select class="form-select">
+                            <option selected>Scegli...</option>
+                            <option value="1">Australia</option>
+                            <option value="2">Canada</option>
+                            <option value="3">China</option>
+                            <option value="4">Europe</option>
+                            <option value="5">U.S.A</option>
+                        </select>
+                    </div>
+                    <!-- cap -->
+                    <div class="col-sm-12 col-md-3 mb-3">
+                        <label for="cap" class="form-label">CAP</label>
+                        <input type="text" class="form-control" id="cap">
+                    </div>
+                    <!-- add file -->
+                    <div class="col-sm-12 mb-3">
+                        <label for="formFile" class="form-label visually-hidden">Select file</label>
+                        <input class="form-control" type="file" id="formFile">
+                    </div>
+                    <!-- check to continue -->
+                    <div class="col-sm-12 mb-3">
+                        <input type="checkbox" class="form-check-input" id="checktocontinue">
+                        <label class="form-check-label" for="checktocontinue">Seleziona per proseguire</label>
+                    </div>
+                    <!-- submit reset btn -->
+                    <div class="col-sm-12 mb-3">
+                        <button class="btn btn-primary" type="submit">Salva</button>
+                        <button class="btn btn-warning" type="reset">Reset</button>
+                    </div>
+                </div>
+            </form>
+        </div>
     </div>
-  </div>
-<!-- /offcanvas -->
+    <!-- /offcanvas -->
 
-<!-- cdn js -->
+    <!-- cdn js -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
