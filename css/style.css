@@ -49,8 +49,9 @@ aside{
 .btn-bell:focus{
     box-shadow: none;
     border-color: none;
-    color:  #ff8f00;
+    color:  #ff8f00;   
 }
+
 .btn-aside{
     background-color: transparent;
     color: white;
